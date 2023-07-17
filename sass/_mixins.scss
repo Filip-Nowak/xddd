@@ -1,0 +1,23 @@
+@use './colors';
+
+@mixin burgerBtn {
+    position: absolute;
+    right: 0;
+    height: 3px;
+    background-color: colors.$dark;
+}
+
+@mixin heroImg($bgImg) {
+    background-image: colors.$img-shadow2, url($bgImg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@mixin contactForm {
+    margin-bottom: 2em;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
