@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/f2aa5e4a7a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="burger-btn">
+        <div class="burger-btn__box">
+            <div class="burger-btn__bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </button>
+
+    <nav class="nav">
+
+        <div class="nav__logo">
+            <a href="#home">logo</a>
+        </div>
+
+        <div class="nav__items">
+            <a href="#home" class="nav__item">Home</a>
+            <a href="#about-us" class="nav__item">O nas</a>
+            <a href="#services" class="nav__item">Usługi</a>
+            <a href="#contact" class="nav__item">Kontakt</a>
+        </div>
+        </div>
+    </nav>
+
+    <header id="home" class="header">
+        <h1 class="header__title">Ślusarz 24h</h1>
+        <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="tel:000000000" class="header__btn btn-special-animation">Zadzwoń</a>
+    </header>
+
+    <main class="main">
+        <section id="about-us" class="about-us section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">O nas</h2>
+
+                <div class="about-us__box">
+                    <h3 class="about-us__header">wszystko zaczeło się od...</h3>
+                    <div class="about-us__text">
+                        <p class="about-us-text">
+                        <blockquote>Lorem ipsum dolor</blockquote> sit amet consectetur adipisicing elit. Magnam dolorem
+                        optio esse sapiente? Molestias ut error labore dolore corrupti quos veniam animi, assumenda,
+                        ipsum aperiam aliquid, temporibus cumque facere dolorem. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Laboriosam praesentium cumque amet quidem necessitatibus et repellat quaerat,
+                        illo neque. Itaque officia perspiciatis nemo omnis tenetur obcaecati dolore, sint eaque id.</p>
+                        <br>
+                        <p class="about-us-text">
+                        <blockquote>Lorem ipsum dolor</blockquote> sit amet consectetur adipisicing elit. Magnam dolorem
+                        optio esse sapiente? Molestias ut error labore dolore corrupti quos veniam animi, assumenda,
+                        ipsum aperiam aliquid, temporibus cumque facere dolorem. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Laboriosam praesentium cumque amet quidem necessitatibus et repellat quaerat,
+                        illo neque. Itaque officia perspiciatis nemo omnis tenetur obcaecati dolore, sint eaque id.</p>
+                        <br>
+                        <br>
+                        <p class="about-us-text">
+                        <blockquote>Lorem ipsum dolor</blockquote> sit amet consectetur adipisicing elit. Magnam dolorem
+                        optio esse sapiente? Molestias ut error labore dolore corrupti quos veniam animi, assumenda,
+                        ipsum aperiam aliquid, temporibus cumque facere dolorem. Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Laboriosam praesentium cumque amet quidem necessitatibus et repellat quaerat,
+                        illo neque. Itaque officia perspiciatis nemo omnis tenetur obcaecati dolore, sint eaque id.</p>
+                        <br>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="services section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Usługi</h2>
+
+                <div class="services__cards">
+
+                    <div class="services__card" onclick="void(0)">
+                        <h3 class="services__card-title">Wymiana zamka</h3>
+                        <hr>
+                        <p><span>Option 1:</span></p>
+                        <p><span>Option 2:</span></p>
+                        <p><span>Time:</span>10h</p>
+                        <p class="price-tag">100zł</p>
+                    </div>
+
+                    <div class="services__card" onclick="void(0)">
+                        <h3 class="services__card-title">Naprawa Zamka</h3>
+                        <hr>
+                        <p><span>Option 1:</span></p>
+                        <p><span>Option 2:</span></p>
+                        <p><span>Time:</span>10h</p>
+                        <p class="price-tag">100zł</p>
+                    </div>
+
+                    <div class="services__card" onclick="void(0)">
+                        <h3 class="services__card-title">Zamki samochodowe</h3>
+                        <hr>
+                        <p><span>Option 1:</span></p>
+                        <p><span>Option 2:</span></p>
+                        <p><span>Time:</span>10h</p>
+                        <p class="price-tag">100zł</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">kontakt</h2>
+
+                <form action="mail.php" method="post" class="contact__form">
+
+                    <div class="contact__form-top">
+
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name" name="name" required>
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="email" class="contact__form-input" id="email" name="email" required>
+
+                    </div>
+                    <label for="msg" class="contact__form-label">Wiadomość</label>
+                    <textarea id="msg" name="msg" class="contact__form-textarea" required></textarea>
+
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+
+                <p class="msg-status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Super Ślusarz </p>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
